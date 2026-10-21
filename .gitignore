@@ -1,0 +1,7 @@
+.env
+node_modules
+memory.json
+facts.json
+*.bak
+*.save
+index-*.js
