@@ -234,7 +234,7 @@ socket.on("delivery", async (event) => {
 
 
     const result = await ai.models.generateContent({
-      model: "gemini-3.5-flash-lite",
+      model: "gemini-3.8-flash",
       contents: [...history, { role: "user", parts: [{ text: (factContext ? factContext + "\n\n" : "") + userText }] }]
     });
 
