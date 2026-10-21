@@ -105,6 +105,7 @@ socket.on("connect_error", (error) => {
 });
 
 socket.on("delivery", async (event) => {
+  console.log("Photon delivery event:", event?.type);
   if (event?.type !== "message.received") return;
 
   const message = event?.data?.object;
